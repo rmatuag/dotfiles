@@ -8,7 +8,7 @@ YOU_ARE_HERE="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 echo "👋  Deep breaths, everything will (probably) be fine!"
 
 # Clone this repo if we haven't already
-git clone --recurse-submodules https://github.com/jakejarvis/dotfiles.git "$YOU_ARE_HERE" || true
+git clone --recurse-submodules https://github.com/rmatuag/dotfiles.git "$YOU_ARE_HERE" || true
 
 # Set up symbolic links for ZSH and Git pointing to this cloned repo
 ln -sf "$YOU_ARE_HERE/zsh/.zshrc" ~/.zshrc

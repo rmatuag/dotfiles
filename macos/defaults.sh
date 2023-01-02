@@ -9,7 +9,7 @@
 set -euo pipefail
 
 # Change new hostname here if necessary
-COMPUTER_NAME="JJ-MBA"
+COMPUTER_NAME="G-Mini"
 
 # Quit System Preferences.app if open
 osascript -e 'tell application "System Preferences" to quit'
@@ -32,12 +32,12 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Set language and text formats
 defaults write NSGlobalDomain AppleLanguages -array "en"
-defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Inches"
+defaults write NSGlobalDomain AppleLocale -string "en_IN@currency=USD"
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool false
 
 # Set the timezone (see `sudo systemsetup -listtimezones` for other values)
-sudo systemsetup -settimezone "America/New_York" > /dev/null
+sudo systemsetup -settimezone "Asia/Kolkata" > /dev/null
 
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
@@ -127,7 +127,8 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+mkdir "${HOME}/Desktop/TBD"
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/TBD"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"

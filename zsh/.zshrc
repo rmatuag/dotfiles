@@ -70,12 +70,6 @@ export SAM_CLI_TELEMETRY=0
 export AZURE_CORE_COLLECT_TELEMETRY=0
 export CHECKPOINT_DISABLE=1
 
-# 1Password integrations
-# https://developer.1password.com/docs/ssh/get-started/#step-4-configure-your-ssh-or-git-client
-export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
-# https://developer.1password.com/docs/cli/shell-plugins/
-source $HOME/.config/op/plugins.sh
-
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

@@ -1,15 +1,8 @@
-
-###############################
-#  Binaries                   #
-###############################
-
+# Binaries
 # Perhaps most importantly...
 brew "zsh"
 
-###############################
-#  Taps                       #
-###############################
-
+#  Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -44,13 +37,13 @@ brew "gnupg"
 
 # More recent versions of some macOS tools
 brew "vim"  #, args: ["with-override-system-vi"]
-#brew "gcc"
 brew "grep"
-#brew "make"
 brew "openssh"
+brew "curl", link: true
+#brew "gcc"
+#brew "make"
 #brew "screen"
 #brew "gmp"
-brew "curl", link: true
 
 # Other useful binaries
 brew "less"
@@ -92,13 +85,14 @@ cask "transmission"
 cask "vnc-viewer"
 
 # Passwords, VPNs, other Security
-cask "1password"
-cask "authy"
-cask "gpg-suite"
-cask "keybase"
-cask "little-snitch"
-cask "tor-browser"
-cask "tunnelblick"
+cask "bitwarden"
+#cask "1password"
+#cask "authy"
+#cask "gpg-suite"
+#cask "keybase"
+#cask "little-snitch"
+#cask "tor-browser"
+#cask "tunnelblick"
 
 # Development/Work
 cask "adoptopenjdk/openjdk/adoptopenjdk"
@@ -115,7 +109,6 @@ cask "handbrake"
 # Others
 cask "barrier"
 cask "rectangle"
-cask "bitwarden"
 cask "vlc"
 cask "clocker"
 cask "google-drive"

@@ -14,7 +14,7 @@ sudo -v
 sudo softwareupdate --install --all
 
 # Install Rosetta 2
-sudo softwareupdate --install-rosetta --agree-to-license
+# sudo softwareupdate --install-rosetta --agree-to-license
 
 # Install Xcode Command Line Tools
 sudo xcode-select --install
