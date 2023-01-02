@@ -100,3 +100,40 @@ alias ytmp3="youtube-dl -f bestaudio -x --audio-format mp3 --audio-quality 320K"
 
 # fun
 alias weather="curl 'https://wttr.in/?format=v2'"
+
+#
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export SSH_KEY_PATH="/Users/gautam/Google\ Drive/Keys"
+
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias assh='ssh -i ~/Google\ Drive/Keys/newaws.pem -l ubuntu'
+alias ascp='scp -i ~/Google\ Drive/Keys/newaws.pem -l ubuntu'
+alias zdrive='ssh root@files.zimbra.io'
+alias mind="ssh -i ~/Google\ Drive/Keys/gautam.pvt gautam@mind.zimbra.io"
+alias mindp="ssh -L localhost:7071:localhost:7071 gautam@mind.zimbra.io"
+alias c='clear'
+alias l='ls -al'
+alias ll='ls -al'
+alias myip="curl http://ipecho.net/plain; echo"
+alias vih='sudo vi /etc/hosts'
+alias pszd='ps -eaf | grep -i Desktop | grep -v grep | awk "{print \$2}"' 
+alias kzd='/usr/bin/pkill -9 $(ps -eaf | grep -i Desktop | grep -v grep | awk "{print \$2}")'
+alias ossh='ssh -i ~/Google\ Drive/Keys/gautam.pvt -l ubuntu'
+alias oscp='scp -i ~/Google\ Drive/Keys/gautam.pvt'
+alias wp='ssh -i ~/Google\ Drive/Keys/wp opc@144.24.14.47'
+alias digs='dig +short'
+alias ch='cat /etc/hosts'
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+alias zd="vi ~/Library/Application\ Support/@zimbra/electron-app/server_prefs.json"
