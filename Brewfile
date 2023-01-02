@@ -55,6 +55,7 @@ brew "git"
 brew "git-lfs"
 brew "git-crypt"
 brew "gh"
+brew "asciidoctor"
 
 # Mostly ordinary binaries
 brew "jq"
