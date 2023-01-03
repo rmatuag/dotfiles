@@ -8,7 +8,7 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH=$HOME/.oh-my-zsh
 
 # Default to nano 'cause I'm a wimp
-export EDITOR="nano"
+export EDITOR="vim"
 export VISUAL="code"
 # export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 export BROWSER="/Applications/Firefox.app/Contents/MacOS/firefox"
