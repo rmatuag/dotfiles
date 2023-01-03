@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # what a mess. https://stackoverflow.com/a/53183593
-YOU_ARE_HERE="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+YOU_ARE_HERE=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 echo "👋  Deep breaths, everything will (probably) be fine!"
 
