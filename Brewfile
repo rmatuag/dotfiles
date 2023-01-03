@@ -79,11 +79,11 @@ cask_args appdir: "/Applications"
 cask "appcleaner"
 cask "coconutbattery"
 cask "geekbench"
-cask "istat-menus"
+#cask "istat-menus"
 cask "macupdater"
 cask "the-unarchiver"
 cask "transmission"
-cask "vnc-viewer"
+#cask "vnc-viewer"
 
 # Passwords, VPNs, other Security
 cask "bitwarden"
@@ -96,10 +96,10 @@ cask "bitwarden"
 #cask "tunnelblick"
 
 # Development/Work
-cask "adoptopenjdk/openjdk/adoptopenjdk"
+cask "adoptopenjdk8"
 cask "iterm2"
-cask "microsoft-office"
-cask "sketch"
+#cask "microsoft-office"
+#cask "sketch"
 cask "tower"
 cask "transmit"
 cask "visual-studio-code"
@@ -120,7 +120,7 @@ cask "itsycal"
 cask "skype"
 cask "slack"
 cask "whatsapp"
-cask "zoomus"
+cask "zoom"
 
 # Browsers (for reference only -- install these via offline DMGs no matter what)
 # * Firefox
@@ -165,7 +165,7 @@ mas "iMovie", id: 408981434
 #mas "Pages", id: 409201541
 #mas "Playgrounds", id: 1496833156
 #mas "Transporter", id: 1450874784
-mas "Xcode", id: 497799835
+#mas "Xcode", id: 497799835
 
 # Third Party
 #mas "Amphetamine", id: 937984704
@@ -176,3 +176,4 @@ mas "Microsoft Remote Desktop", id: 1295203466
 #mas "Twitter", id: 409789998
 #mas "VMware Remote Console", id: 1230249825
 #mas "WireGuard", id: 1451685025
+
