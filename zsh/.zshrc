@@ -1,16 +1,11 @@
-# uncomment to profile slow startup time
-# zmodload zsh/zprof
-
 # Path to cloned dotfiles repo
 export DOTFILES=$HOME/.dotfiles
 
 # Path to oh-my-zsh installation
 export ZSH=$HOME/.oh-my-zsh
-
-# Default to nano 'cause I'm a wimp
+export GPG_TTY=$(tty)
 export EDITOR="vim"
 export VISUAL="code"
-# export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 export BROWSER="/Applications/Firefox.app/Contents/MacOS/firefox"
 
 # Adjust history for speed
@@ -18,10 +13,13 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
+CASE_SENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
+export LANG=en_US.UTF-8
+
 # Oh My ZSH settings
 ZSH_CUSTOM=$DOTFILES/zsh
-ZSH_THEME="agnoster"
-DEFAULT_USER=jake
+DEFAULT_USER=gautam
 
 # Oh My ZSH plugins
 plugins=(
@@ -31,9 +29,10 @@ plugins=(
   vscode
   gitignore
   gnu-utils
-  zsh-syntax-highlighting
-  zsh-autosuggestions
 )
+
+source .oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source .oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Perform compinit only once a day for speed
 # https://gist.github.com/ctechols/ca1035271ad134841284#gistcomment-2308206
@@ -46,9 +45,6 @@ compinit -C
 
 # Load everything!
 source $ZSH/oh-my-zsh.sh
-
-export ZPLUG_HOME=~/.zplug
-source $ZPLUG_HOME/init.zsh
 
 # Fix slow paste problem w/ zsh-syntax-highlighting plugin
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/295
@@ -73,6 +69,4 @@ export CHECKPOINT_DISABLE=1
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# uncomment to profile slow startup time
-# zprof
-# zmodload -u zsh/zprof
+typeset -g POWERLEVEL10K_INSTANT_PROMPT=off
