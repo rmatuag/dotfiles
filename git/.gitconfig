@@ -8,7 +8,7 @@
 [user]
 	email = rmatuag@gmail.com
 	name = Gautam
-	signingkey = b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB8GcfJ4s54TKa5W6VDZpLEaX+LXJMN946WrGZu88SZ/wAAAJgmhnGpJoZx\nqQAAAAtzc2gtZWQyNTUxOQAAACB8GcfJ4s54TKa5W6VDZpLEaX+LXJMN946WrGZu88SZ/w\nAAAEB+hIGXhLvo/3VKeErTRiPGJwt/J7L/F8NpeFwx7I8caHwZx8niznhMprlbpUNmksRp\nf4tckw33jpasZm7zxJn/AAAAEXJtYXR1YWdAZ21haWwuY29tAQIDBA==
+	signingkey = 1BB3A561A90E5C0B7237642695FF7D5AA6940345
 	password = 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
 [init]
 	defaultBranch = main
