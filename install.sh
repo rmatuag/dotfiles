@@ -17,9 +17,6 @@ ln -sf "$YOU_ARE_HERE/git/.gitignore_global" ~/.gitignore_global
 mkdir -p ~/.ssh
 ln -sf "$YOU_ARE_HERE/ssh/.ssh/config" ~/.ssh/config
 
-# Suppress terminal login banners
-touch ~/.hushlogin
-
 # Get Oh My ZSH up and running
 if [ ! -e ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -31,9 +28,6 @@ git submodule update --init --recursive
 if [ "$(uname)" = "Darwin" ]; then
   # shellcheck disable=SC1090,SC1091
   source "$YOU_ARE_HERE/macos/macos.sh"
-elif [ "$CODESPACES" = "true" ]; then
-  # shellcheck disable=SC1090,SC1091
-  source "$YOU_ARE_HERE/codespaces/codespaces.sh"
 else
   echo ""
   echo "This isn't a Mac, so we're all done here!"
