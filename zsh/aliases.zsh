@@ -61,18 +61,18 @@ alias weather="curl 'https://wttr.in/?format=v2'"
 
 # Misc
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
-alias assh='ssh -i ~/Google\ Drive/Keys/newaws.pem -l ubuntu'
-alias ascp='scp -i ~/Google\ Drive/Keys/newaws.pem -l ubuntu'
+alias assh='ssh -i $SSH_KEY_PATH/newaws.pem -l ubuntu'
+alias ascp='scp -i $SSH_KEY_PATH/newaws.pem -l ubuntu'
 alias zdrive='ssh root@files.zimbra.io'
-alias mind="ssh -i ~/Google\ Drive/Keys/gautam.pvt gautam@mind.zimbra.io"
+alias mind="ssh -i $SSH_KEY_PATH/gautam.pvt gautam@mind.zimbra.io"
 alias mindp="ssh -L localhost:7071:localhost:7071 gautam@mind.zimbra.io"
 alias myip="curl http://ipecho.net/plain; echo"
 alias vih='sudo vi /etc/hosts'
 alias pszd='ps -eaf | grep -i Desktop | grep -v grep | awk "{print \$2}"' 
 alias kzd='/usr/bin/pkill -9 $(ps -eaf | grep -i Desktop | grep -v grep | awk "{print \$2}")'
-alias ossh='ssh -i ~/Google\ Drive/Keys/gautam.pvt -l ubuntu'
-alias oscp='scp -i ~/Google\ Drive/Keys/gautam.pvt'
-alias wp='ssh -i ~/Google\ Drive/Keys/wp opc@144.24.14.47'
+alias ossh='ssh -i $SSH_KEY_PATH/gautam.pvt -l ubuntu'
+alias oscp='scp -i $SSH_KEY_PATH/gautam.pvt'
+alias wp='ssh -i $SSH_KEY_PATH/wp opc@144.24.14.47'
 alias digs='dig +short'
 alias ch='cat /etc/hosts'
 export PATH="/usr/local/sbin:$PATH"
